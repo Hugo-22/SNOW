@@ -1,0 +1,42 @@
+/* SECTION 1 */
+.section-1 {
+    background-color: #fff;
+    width: 100%;
+    padding: 8.15rem 0;
+}
+.section-1-body {
+    height: 100%;
+}
+.line-height {
+    line-height: 2rem;
+}
+
+/* SECTION 2 */
+.section-2 {
+    background-image: url('../images/pattern-bg.png');
+    padding: 10.20rem 0;
+}
+
+/* SECTION 3 */ 
+.size-large-img {
+    margin-bottom: 3rem !important;
+}
+/* .size-tall-img {
+} */
+
+.size-text {
+    padding: 9.2rem;
+}
+.cheat {
+    height: 43.7rem
+}
+
+/* SECTION 4 */
+.section-4 {
+    width: 100%;
+}
+
+/* SECTION 5 */
+.section-5 {
+    padding: 6rem;
+}
