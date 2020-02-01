@@ -1,0 +1,48 @@
+.valid-input {
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.434);
+    outline: none !important;
+
+}
+.valid-input:focus:invalid {
+    box-shadow: none;
+    border-bottom: 1px solid red;
+
+}
+.valid-input:valid {
+    box-shadow: none;
+    border-bottom: 1px solid green;
+}
+.pos-relative {
+    position: relative;
+}
+
+.message-name, .message-email, .message-title, .message-comment {
+    display: none;
+}
+.valid-input:focus:invalid ~ .message-name {
+    display: unset;
+}
+.valid-input:focus:invalid ~ .message-email {
+    display: unset;
+}
+.valid-input:focus:invalid ~ .message-title {
+    display: unset;
+}
+.valid-input:focus:invalid ~ .message-comment {
+    display: unset;
+}
+.label {
+    transition: all .5s;
+    color: green;
+}
+.label:invalid ~ .label {
+    color: red;
+    display: none;
+    opacity: 1;
+
+}
+.valid-input:placeholder-shown ~ .label {
+    opacity: 0;
+    transform: translateY(17px);
+}

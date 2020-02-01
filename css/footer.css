@@ -1,0 +1,18 @@
+.footer {
+    background-color: #0c0c0C;
+  
+}
+.padding-top-footer {
+    padding: 9rem 0;
+}
+.size-text-footer {
+    font-size: 1.4rem;
+}
+
+.border-top-footer {
+    border-top: 1px solid rgb(37, 37, 37);
+}
+
+.icons-center {
+    text-align: center;
+}

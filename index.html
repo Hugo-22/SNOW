@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sections.css">
@@ -21,29 +20,54 @@
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
     <title>Template Bootstrap</title>
 </head>
 
 <body>
     <header class="header">
-
-
-
+    
         <div>
-            <label for="check" class="check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
             <input class="checkInput" type="checkbox" name="check-input" id="check">
-            <div class="bgc">
 
-            </div>
-            <nav>
+            <label for="check" class="check">
+                <span class="span-1"></span>
+                <span class="span-2"></span>
+                <span class="span-3"></span>
+            </label>
 
+            <nav class="nav-style">
+
+                <ul class="list-style">
+
+                    <li class="li-style">
+                        <label for="check">
+                            <a class="link-style" id="link-style1" href="#about">About</a>
+                        </label>
+                    </li>
+                    <li class="li-style">
+                        <label class="" for="check">
+                            <a class="link-style" id="link-style2" href="#projects">Projects</a>
+                        </label>
+
+                    </li>
+                    <li class="li-style">
+                        <label class="" for="check">
+                            <a class="link-style" id="link-style3" href="#blog">Blog</a>
+                        </label>
+                    </li>
+                    <li class="li-style">
+                        <label class="" for="check">
+                            <a class="link-style" id="link-style4" href="#contact">Contact</a>
+                        </label>
+
+                    </li>
+                </ul>
             </nav>
-
-
+            <div class="bgc">
+            </div>
         </div>
 
         <div class="container header-body d-flex flex-column justify-content-between">
@@ -52,38 +76,16 @@
 
                     <nav class="navbar navbar-collapse navbar-toggler navbar-dark">
                         <a class="navbar-brand" href="#home">
-                            <img src="images/logo.png" alt="logo" width="82" height="32">
+                            <img class="mt-3" src="images/logo.png" alt="logo" width="82" height="32">
                         </a>
-                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> -->
-
-                        <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul
-                                class="navbar-nav d-lg-flex d-flex flex-lg-row flex-column  justify-content-center justify-content-lg-center text-uppercase">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item pl-5">
-                                    <a class="nav-link" href="#projects">Projects</a>
-                                </li>
-                                <li class="nav-item pl-5">
-                                    <a class="nav-link" href="#blog">Blog</a>
-                                </li>
-                                <li class="nav-item pl-5">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div> -->
                     </nav>
                 </div>
             </div>
             <div class="row">
                 <div class=" col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <p class="text-white text-uppercase">new branding agency</p>
-                    <h1 class="text-white">We are about to change the way</h1>
-                    <h1 class="text-white font-italic font-weight-lighter">you publish on web</h1>
+                    <p class="text-white text-uppercase font-style-header">new branding agency</p>
+                    <h1 class="text-white h1-font-style1">We are about to change the way</h1>
+                    <h1 class="text-white font-italic font-weight-lighter h1-font-style2">you publish on web</h1>
                 </div>
             </div>
             <div class="row mb-5">
@@ -99,12 +101,13 @@
     <section class="section-1" id="about">
         <div class="container section-1-body d-lg-flex align-items-lg-center">
             <div class="row">
-                <div class="col-lg-12 d-lg-flex flex-lg-column align-items-center">
-                    <h2>About Our Agency</h2>
-                    <p class="w-75 text-center mt-4 line-height">We are a new design studio based in USA. We have over
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-12 d-lg-flex flex-lg-column align-items-lg-center align-items-md-center align-items-sm-center align-items-center text-center">
+                    <h2 class="h2-style text-center">About Our Agency</h2>
+                    <p class="text-center mt-4 style-p-15">We are a new design studio based in USA. We have over
                         20 years of combined experience, and know a thing or two about designing websites abd mobile
                         apps. Clever use of technology and lean processes enable us to work faster and smater.</p>
-                    <img class="mt-4" src="images/signature.png" alt="signature" width="223" height="57">
+                    <img class="mt-4 img-fluid" src="images/signature.png" alt="signature" width="223" height="57">
                 </div>
             </div>
         </div>
@@ -112,122 +115,156 @@
 
     <section class="section-2">
         <div class="container section-2-body">
-            <div class="row text-white">
-                <div class="col-md-6 col-lg-3 py-4">
-                    <div class="row align-items-lg-center">
-                        <div class="col-md-3 col-lg-3">
-                            <img src="images/done.png" alt="icon done" width="45" height="45">
+            <div class="row text-white justify-content-sm-center">
+                <div class="col-md-5 col-sm-12 col-lg-3 py-4 scale-anim">
+                    <div class="row align-items-lg-center justify-content-sm-center offset-2 offset-sm-2">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                            <img src="images/done.png" class="img-fluid" alt="icon done" width="45" height="45">
                         </div>
-                        <div class="col-md-6 col-lg-9">
-                            <p class="m-0">548</p>
-                            <p>projects completed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 py-4">
-                    <div class="row align-items-lg-center">
-                        <div class="col-3">
-                            <img src="images/time.png" alt="icon done" width="45" height="45">
-                        </div>
-                        <div class="col-9">
-                            <p class="m-0">1465</p>
-                            <p>working hours</p>
+                        <div class="col-6 col-sm-6 col-md-9 col-lg-9">
+                            <p class="m-0 style-numbers">548</p>
+                            <p class="style-text">projects completed</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-4">
-                    <div class="row align-items-lg-center">
-                        <div class="col-3">
-                            <img src="images/star.png" alt="icon done" width="45" height="45">
+                <div class="col-md-5 col-lg-3 py-4 scale-anim">
+                    <div class="row align-items-lg-center justify-content-sm-center offset-2 offset-sm-2">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                            <img src="images/time.png" class="img-fluid ttt" alt="icon done" width="45" height="45">
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-9 col-lg-9">
+                            <p class="m-0 style-numbers">1465</p>
+                            <p class="style-text">working hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3 py-4 scale-anim">
+                    <div class="row align-items-lg-center justify-content-sm-center offset-2 offset-sm-2">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                            <img src="images/star.png" class="img-fluid" alt="icon done" width="45" height="45">
 
                         </div>
-                        <div class="col-9">
-                            <p class="m-0">548</p>
-                            <p>projects completed</p>
+                        <div class="col-6 col-sm-6 col-md-9 col-lg-9">
+                            <p class="m-0 style-numbers">548</p>
+                            <p class="style-text">positive feedbacks</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-4">
-                    <div class="row align-items-lg-center">
-                        <div class="col-3">
-                            <img src="images/heart.png" alt="icon done" width="45" height="45">
+                <div class="col-md-5 col-lg-3 py-4 scale-anim">
+                    <div class="row align-items-lg-center justify-content-sm-center offset-2 offset-sm-2">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                            <img src="images/heart.png" class="img-fluid" alt="icon done" width="45" height="45">
                         </div>
-                        <div class="col-9">
-                            <p class="m-0">612</p>
-                            <p>positive feedbacks</p>
+                        <div class="col-6 col-sm-6 col-md-9 col-lg-9 ">
+                            <p class="m-0 style-numbers">612</p>
+                            <p class="style-text">happy clients</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="section-3">
+    <section class="section-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 d-lg-flex flex-lg-column align-items-center py-5">
-                    <h2>Best Projects</h2>
-                    <p class="text-center mt-2 line-height w-50">Donec orci sem, pretium ac dolor et, faucibus faucibus
+                    <h2 id="projects" class="h2-style text-center text-sm-center text-md-center">Best Projects</h2>
+                    <p class="text-center text-sm-center text-md-center text-lg-center mt-4 style-p-15">Donec orci sem,
+                        pretium ac dolor et, faucibus faucibus
                         mauris. Etiam, pellentesque faucibus. Vestibulum gravida voluptat ipsum non ultrices.</p>
                 </div>
             </div>
+
             <div class="card-columns">
-                <div class="card size-large-img">
-                    <img class="card-img-top" src="images/large.png" alt="Card image cap">
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
+                        
                 </div>
-                <div class="card size-large-img">
-                    <img class="card-img-top" src="images/large.png" alt="Card image cap">
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
                 </div>
-                <div class="card size-large-img">
-                    <img class="card-img-top" src="images/tall.png" alt="Card image cap">
+                <div class="card card-img-lg">
+                    <img class="img-fluid" src="https://picsum.photos/370/530" width="370" height="530"
+                        alt="Card image cap">
                 </div>
-                <div class="card size-large-img">
-                    <img class="card-img-top cheat" src="images/tall.png" alt="Card image cap">
+                <div class="card card-img-lg">
+                    <img class="img-fluid" src="https://picsum.photos/370/530" width="370" height="530"
+                        alt="Card image cap">
                 </div>
-                <div class="card-body text-center size-text">
-                    <h3 class="card-title">Vinil Record</h3>
-                    <p class="card-text text-uppercase">photography</p>
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
                 </div>
-                <div class="card mt-auto">
-                    <img class="card-img" src="images/large.png" alt="Card image">
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
                 </div>
-                <div class="card size-large-img">
-                    <img class="card-img" src="images/large.png" alt="Card image">
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
                 </div>
-                <div class="card size-large-img">
-                    <img class="card-img" src="images/tall.png" alt="Card image">
+                <div class="card card-img-lg">
+                    <img class="img-fluid" src="https://picsum.photos/370/530" width="370" height="530"
+                        alt="Card image cap">
                 </div>
-                <div class="card">
-                    <img class="card-img" src="images/large.png" alt="Card image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 p-0">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/img-carousel1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/img-carousel2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/img-carousel3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
+                <div class="card card-img">
+                    <img class="img-fluid" src="https://picsum.photos/370/250" width="370" height="250"
+                        alt="Card image cap">
                 </div>
             </div>
         </div>
     </section>
+        <section class="container-fluid section-4">
+            <div class="container">
+                <!--Carousel-->
+                <div class="row py-5 text-white">
+                    <div class="col">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div
+                                class="carousel-inner text-center mx-auto my-sm- my-lg-5 col-10 col-sm-10 col-md-9 col-lg-7">
+                                <div class="carousel-item ">
+                                    <p class="ft-size mb-4">“ Outstanding job and
+                                        exceeded
+                                        all expectations. It was a pleasure
+                                        to work with them on a sizable first project and am looking
+                                        forward to start the next one asap.”</p>
+                                    <p class="font-family-work text-uppercase font-size-14">Mickael Hopkins</p>
+                                </div>
+                                <div class="carousel-item active">
+                                    <p class="ft-size mb-4">“ Outstanding job and
+                                        exceeded
+                                        all expectations. It was a pleasure
+                                        to work with them on a sizable first project and am looking
+                                        forward to start the next one asap.”</p>
+                                    <p class="font-family-work text-uppercase font-size-14">Mickael Hopkins</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="ft-size mb-4">“ Outstanding job and
+                                        exceeded
+                                        all expectations. It was a pleasure
+                                        to work with them on a sizable first project and am looking
+                                        forward to start the next one asap.”</p>
+                                    <p class="ft-size-14">Mickael Hopkins</p>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators align-items-center position-relative mb-0 h-auto">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                                    class="active">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
 
-    <section class="section-5">
+
+    <section class="section-5 d-none d-sm-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 d-lg-flex justify-content-lg-around">
@@ -241,97 +278,418 @@
         </div>
     </section>
 
-    <section class="section-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner row w-100 mx-auto">
-                          <div class="carousel-item col-md-4 active">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 1</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 2</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 3</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 4</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 5</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 6</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item col-md-4">
-                            <div class="card">
-                              <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 7</h4>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-                      
-                      </div>
+    <div class="latest-blog">
+        <div class="container-fluid ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12 mt-5 ">
+                        <h2 class="text-center font-family-playfair font-weight-bold">Latest Blog</h2>
+                        <p class=" font-family-work mx-auto w-75 text-justify text-center mb-5 text-secondary ">donec
+                            orci sem et, pretium ac
+                            dolor
+                            et, faucibus faucibus mauris.Etiam,pellentesque faucibus.<br>
+                            Vestibulum gravida voluptat ipsum non ultrices.</p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row d-block py-5">
+                    <div class="col">
+                        <!-- carousel card -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <!-- 1st slide -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <!-- 3 cards / slide -->
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            NATURE</h6>
+                                                        <div class="card-img-top card-img-1">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Something I need to tell you</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 16, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            DESIGN</h6>
+                                                        <div class="card-img-top card-img-3">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Why you should Always First</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            JUNE 01, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            BRANDING</h6>
+                                                        <div class="card-img-top card-img-2">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                        Are you doing The Right Way ?</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 28, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> <!-- fin d-flex -->
+
+
+                                </div>
+                                <!-- 2nd slide -->
+                                <div class="carousel-item">
+                                    <!-- 3 cards / slide -->
+                                    <div class="d-flex justify-content-between">
+                                        
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            DESIGN</h6>
+                                                        <div class="card-img-top card-img-3">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Why you should Always First</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            JUNE 01, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            BRANDING</h6>
+                                                        <div class="card-img-top card-img-2">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Are you doing The Right Way ?</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 28, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            NATURE</h6>
+                                                        <div class="card-img-top card-img-1">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Something I need to tell you</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 16, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> <!-- fin d-flex -->
+
+                                </div>
+                                <!-- 3rd slide -->
+                                <div class="carousel-item active">
+                                    <!-- 3 cards / slide -->
+                                    <div class="d-flex justify-content-between">
+                                       
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            BRANDING</h6>
+                                                        <div class="card-img-top card-img-2">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Are you doing The Right Way ?</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 28, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            NATURE</h6>
+                                                        <div class="card-img-top card-img-1">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Something I need to tell you</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            MAY 16, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="img-card overflow-hidden">
+                                                        <h6 class="position-absolute text-white text-uppercase font-weight-bold letter-spacing-h6 font-size-12 ml-2">
+                                                            DESIGN</h6>
+                                                        <div class="card-img-top card-img-3">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title color-grey-dark font-family-playfair font-weight-bold">
+                                                            Why you should Always First</h5>
+                                                        <h4 class="text-uppercase color-grey-dark font-family-work font-size-14">
+                                                            JUNE 01, 2016</h4>
+                                                        <p class="card-text color-grey-medium font-family-work">Some
+                                                            quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> <!-- fin d-flex -->
+
+                                </div>
+                            </div>
+                            <!-- Dots indicateurs carousel -->
+                            <ol class="carousel-indicators position-relative mt-4">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="rounded-circle">
+                                </li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1" class="rounded-circle"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2" class="rounded-circle active">
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--fin row-->
+
+            </div>
+        </div>
+
+    </div>
+    <section>
+
     </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 id="contact" class="h2-style">Contact Info :</h2>
+
+                    <p class="text-contact mt-5 w-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+                        culpa suscipit
+                        a nobis quas distinctio odio, tempora architecto cumque nesciunt voluptatibus debitis, illum
+                        esse? Odit, nulla? Commodi sunt veniam in?</p>
+                    <div class="text-contact mt-4">
+                        <strong>Address :</strong><span>10111 Santa Monica Boulevard, LA</span>
+
+                    </div>
+                    <div class="text-contact  my-1"><strong>Phone :</strong><span>+44 987 065 908</span></div>
+                    <div class="text-contact my-1"><strong>Email :</strong><span>info@example.com</span></div>
+                    <div class="text-contact my-1"><strong>Fax :</strong><span>+44 987 065 908</span></div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form id="form">
+                        <div class="form-row">
+                            <div class="form-group pos-relative col-md-6">
+
+                                <input oninput="check()" type="text" class="form-control p-4 valid-input" id="name"
+                                    placeholder="Your Name" required>
+                                <label class="label" for="name">Your name</label>
+                                <div class="message-name">
+                                    Please enter your name
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input oninput="check()" type="email" class="form-control p-4 valid-input" id="email"
+                                    placeholder="Your Email" required>
+                                <label class="label" for="email">Your Email</label>
+                                <div class="message-email">
+                                    Please enter your Email
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input oninput="check()" type="text" class="form-control p-4 valid-input" id="title"
+                                placeholder="Your Title" required>
+                            <label class="label" for="title">Your title</label>
+                            <div class="message-title">
+                                Please enter your title
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea oninput="check()" class="form-control p-4 valid-input" id="comment" rows="7"
+                                placeholder="Your Comment" required></textarea>
+                            <label class="label" for="message">Your Comment</label>
+                            <div class="message-comment">
+                                Please enter your comment
+                            </div>
+                        </div>
+
+
+
+                        <button oninput="check()" id="submit" type="submit" class="btn btn-dark p-4" disabled>Sign
+                            in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row padding-top-footer">
+                <div class="col-lg-4">
+                    <h3
+                        class="text-white about-center text-center text-sm-center text-md-center text-lg-left text-xl-left mb-4">
+                        About Us</h3>
+                    <p class="text-white size-text-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Autem pariatur optio
+                        distinctio excepturi maiores voluptate sit totam, nostrum nobis dolore nisi natus culpa iusto
+                        perspiciatis officia deserunt ex quo doloremque?</p>
+                    <div class="social-icons mt-4 icons-center">
+                        <img src="images/fb.jpg" alt="">
+                        <img src="images/tw.jpg" alt="">
+                        <img src="images/gg.jpg" alt="">
+                        <img src="images/be.jpg" alt="">
+                        <img src="images/pi.jpg" alt="">
+                        <img src="images/ig.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-sm-none d-lg-block">
+                    <h3 class="text-white">Latest Twits</h3>
+                    <div class="text-tweet text-white d-md-flex d-lg-flex justify-content-md-center">
+                        <img src="images/icons8-twitter.svg" alt="" width="31" height="26">
+                        <p class="size-text-footer ml-3">Duis eget finibus nibh. Vivamus sagittis vulputate risus ac
+                            tincidunt.</p>
+                    </div>
+                    <div class="text-tweet text-white d-md-flex d-lg-flex mt-3 justify-content-md-center">
+                        <img src="images/icons8-twitter.svg" alt="" width="31" height="26">
+                        <p class="size-text-footer ml-3">Duis eget finibus nibh. Vivamus sagittis vulputate risus ac
+                            tincidunt.</p>
+                    </div>
+                    <div class="text-tweet text-white d-md-flex d-lg-flex mt-3 justify-content-md-center">
+                        <img src="images/icons8-twitter.svg" alt="" width="31" height="26">
+                        <p class="size-text-footer ml-3">Duis eget finibus nibh. Vivamus sagittis vulputate risus ac
+                            tincidunt.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-sm-none d-lg-block">
+                    <h3 class="text-white mb-4">Instagram</h3>
+                    <div class="row mb-3">
+                        <div class="col-lg-3"><img src="images/img-1.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-2.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-3.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-4.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"><img src="images/img-5.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-6.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-7.jpg"></div>
+                        <div class="col-lg-3"><img src="images/img-8.jpg"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row py-5 border-top-footer">
+                <div class="col-lg-12">
+                    <p class="text-center text-white">&copy; 2016. Created by Unvab.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -343,7 +701,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
